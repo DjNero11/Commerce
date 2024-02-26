@@ -1,0 +1,17 @@
+{% extends "auctions/layout.html" %}
+
+
+{% block body %}
+
+    <h2>Active Listings</h2>
+    
+    {% for l, c in zip_data %}
+    <a href="{% url 'listing_page' listing_id=l.id %}"><h5>{{ l.title }}</h5></a>
+    <p>Description: {{ l.description }}</p>
+    <p>Current price: ${{ c }}</p>
+    <img class="activephoto" src="{{ l.image }}" alt="listing image">
+
+    {% endfor %}
+
+
+{% endblock %}

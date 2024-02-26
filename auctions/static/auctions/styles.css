@@ -1,0 +1,13 @@
+body {
+    padding: 10px;
+}
+
+/* Index */
+.activephoto{
+    width: 400px;
+}
+
+/* Listing page */
+.listing_image{
+    max-width: 800px;
+}
